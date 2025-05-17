@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Flashcard System</h1>
+
+    <div class="inpCont">
+        <h2>Add Flashcard</h2>
+        <input class="inputField" type="text" id="studentId" placeholder="Student ID">
+        <input class="inputField" type="text" id="question" placeholder="Question">
+        <input class="inputField" type="text" id="answer" placeholder="Answer">
+        <button class="inputField" onclick="addFlashcard()">Add</button>
+    </div>
+
+    <div class="inpCont">
+        <h2>Get Flashcards</h2>
+        <input class="inputField" type="text" id="fetchStudentId" placeholder="Student ID">
+        <input class="inputField" type="number" id="limit" placeholder="Enter limit">
+        <button class="inputField" onclick="fetchFlashcards()">Show</button>
+    </div>
+
+    <div id="flashcardList"></div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
